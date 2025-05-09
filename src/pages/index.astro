@@ -1,26 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/Home/Header.astro';
+import Hero from '../components/Home/Hero.astro';
+import CardServices from '../components/Home/CardServices.astro';
+import Properties from '../components/Home/Properties.astro';
+import Testimonials from '../components/Home/Testimonials.astro';
+import Questions from '../components/Home/Questions.astro';
 ---
 
 <Layout title="Inicio">
-    <div class="w-screen flex items-center justify-center bg-[url('../assets/Home/Abstracto.png')] bg-black text-white px-3 py-5 gap-2.5 relative">
-        <p>
-            ✨Discover Your Dream Property with Estatein
-            <a href="/">Learn More</a>
-        </p>
-
-        <button class="bg-white/25 text-black rounded-full hover:bg-black hover:text-white hover:border transition-colors size-7 p-1 cursor-pointer absolute right-1/12">
-            <img src="/src/assets/Eliminar.png" alt="Icono para eliminar">
-        </button>
-    </div>
-
-    <div class="w-screen flex items-center justify-around text-oscuro">
-        <div class="flex gap-3 items-center">
-            <img class="size-7" src="/src/assets/Logo.svg" alt="Logo">
-            <h1>Estatein</h1>
-        </div>
-    </div>
+	<Header />
+	<Hero />
+	<CardServices />
+	<Properties />
+	<Testimonials />
+	<Questions />
 </Layout>

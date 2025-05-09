@@ -1,0 +1,94 @@
+{
+	"testimonials": [
+		{
+			"title": "Exceptional Service!",
+			"content": "Our experience with Estatein was outstanding. Their team’s dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=3",
+				"name": "Emelie Thomson",
+				"location": "USA, Florida"
+			},
+			"estrellas": 5
+		},
+		{
+			"title": "Efficient and Reliable",
+			"content": "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn’t be happier with the results.",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=5",
+				"name": "Emelie Thomson",
+				"location": "USA, Florida"
+			},
+			"estrellas": 4
+		},
+		{
+			"title": "Trusted Advisors",
+			"content": "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=11",
+				"name": "John Mans",
+				"location": "USA, Nevada"
+			},
+			"estrellas": 5
+		},
+		{
+			"title": "Absolutely Wonderful",
+			"content": "From start to finish, the service was seamless. We felt supported throughout and ended up with the perfect home for our family.",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=14",
+				"name": "Sophie Kline",
+				"location": "Canada, Ontario"
+			},
+			"estrellas": 4
+		},
+		{
+			"title": "Smooth and Stress-Free",
+			"content": "Estatein made the process so easy. Their agents were always available and extremely helpful every step of the way.",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=15",
+				"name": "Carlos Mendez",
+				"location": "Mexico, Jalisco"
+			},
+			"estrellas": 5
+		},
+		{
+			"title": "Excellent Investment Advice",
+			"content": "Thanks to Estatein, we found a great rental property. Their market knowledge helped us make a confident purchase.",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=16",
+				"name": "Lara Becker",
+				"location": "Germany, Berlin"
+			},
+			"estrellas": 3
+		},
+		{
+			"title": "Top-Tier Customer Support",
+			"content": "Any questions we had were answered right away. It felt like we had a whole team behind us at every moment.",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=20",
+				"name": "Daniel Okoro",
+				"location": "Nigeria, Lagos"
+			},
+			"estrellas": 4
+		},
+		{
+			"title": "Perfect for First-Time Buyers",
+			"content": "We were nervous about buying our first home, but Estatein's guidance gave us the confidence to move forward.",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=21",
+				"name": "Hannah Li",
+				"location": "Australia, Sydney"
+			},
+			"estrellas": 5
+		},
+		{
+			"title": "Professional and Courteous",
+			"content": "Their professionalism really stood out. Everything was clear, efficient, and respectful from the beginning.",
+			"author": {
+				"avatar": "https://i.pravatar.cc/150?img=22",
+				"name": "Youssef Karim",
+				"location": "Morocco, Casablanca"
+			},
+			"estrellas": 3
+		}
+	]
+}

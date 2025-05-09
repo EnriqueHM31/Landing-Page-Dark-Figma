@@ -1,0 +1,229 @@
+{
+	"properties": [
+		{
+			"img": "/src/assets/Home/Lugar1.png",
+			"title": "Seaside Serenity Villa",
+			"subtitle": "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "4-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "3-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "Villa"
+				}
+			],
+			"precio": "$550,000",
+			"link_informacion": "/"
+		},
+		{
+			"img": "/src/assets/Home/Lugar2.png",
+			"title": "Metropolitan Havena",
+			"subtitle": "A chic and fully-furnished 2-bedroom apartment with panoramic city views",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "2-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "2-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "Villa"
+				}
+			],
+			"precio": "$550,000",
+			"link_informacion": "/"
+		},
+		{
+			"img": "/src/assets/Home/Lugar3.png",
+			"title": "Rustic Retreat Cottage",
+			"subtitle": "An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "3-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "3-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "Villa"
+				}
+			],
+			"precio": "$550,000",
+			"link_informacion": "/"
+		},
+		{
+			"img": "/src/assets/Home/Lugar4.png",
+			"title": "Mountain View Escape",
+			"subtitle": "A cozy 2-bedroom cabin with a fireplace and scenic mountain views",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "2-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "1-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "Cabin"
+				}
+			],
+			"precio": "$310,000",
+			"link_informacion": "/"
+		},
+		{
+			"img": "/src/assets/Home/Lugar5.png",
+			"title": "Urban Loft Living",
+			"subtitle": "A modern loft with 1-bedroom and 1.5-bathroom in the heart of downtown",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "1-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "1-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "Loft"
+				}
+			],
+			"precio": "$420,000",
+			"link_informacion": "/"
+		},
+		{
+			"img": "/src/assets/Home/Lugar6.png",
+			"title": "Lakeside Family Home",
+			"subtitle": "Spacious 5-bedroom, 4-bathroom house with lake access and private dock",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "5-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "4-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "House"
+				}
+			],
+			"precio": "$750,000",
+			"link_informacion": "/"
+		},
+		{
+			"img": "/src/assets/Home/Lugar7.png",
+			"title": "Modern Suburban Home",
+			"subtitle": "A 3-bedroom, 2-bathroom home in a quiet neighborhood with a large backyard",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "3-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "2-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "House"
+				}
+			],
+			"precio": "$495,000",
+			"link_informacion": "/"
+		},
+		{
+			"img": "/src/assets/Home/Lugar8.png",
+			"title": "Coastal Luxury Penthouse",
+			"subtitle": "Luxury 4-bedroom, 3.5-bathroom penthouse with ocean views and private elevator",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "4-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "3-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "Penthouse"
+				}
+			],
+			"precio": "$1,200,000",
+			"link_informacion": "/"
+		},
+		{
+			"img": "/src/assets/Home/Lugar9.png",
+			"title": "Countryside Ranch Estate",
+			"subtitle": "Expansive 6-bedroom, 5-bathroom ranch estate with barn and stables",
+			"link": {
+				"title": "Learn More",
+				"href": "/"
+			},
+			"botones": [
+				{
+					"icono": "/src/assets/Home/iconBedroom.png",
+					"texto": "6-bedroom"
+				},
+				{
+					"icono": "/src/assets/Home/iconBathroom.png",
+					"texto": "5-bathroom"
+				},
+				{
+					"icono": "/src/assets/Home/IconVilla.png",
+					"texto": "Ranch"
+				}
+			],
+			"precio": "$980,000",
+			"link_informacion": "/"
+		}
+	]
+}

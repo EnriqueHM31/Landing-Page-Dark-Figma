@@ -1,0 +1,31 @@
+---
+const CARDS_SERVICES = [
+	{ title: 'Find Your Dream Home', icono: '/src/assets/Home/CardS_1.png' },
+	{ title: 'Unlock Property Value', icono: '/src/assets/Home/CardS_2.png' },
+	{
+		title: 'Effortless Property Management',
+		icono: '/src/assets/Home/CardS_3.png',
+	},
+	{
+		title: 'Smart Investments, Informed Decisions',
+		icono: '/src/assets/Home/CardS_4.png',
+	},
+];
+---
+
+<section class="max-w-full flex gap-4 items-center px-3 bg-black">
+	{
+		CARDS_SERVICES.map(({ title, icono }) => (
+			<a
+				href="/"
+				class="flex-1 flex flex-col items-center gap-3 bg-primary px-3 py-10 my-7 rounded-2xl relative border border-white/15 hover:border-secondary transition-colors"
+			>
+				<div class="absolute top-1/12 right-1/12">
+					<img class="size-8" src="/src/assets/Home/Enlace.png" alt="Icono de servicio" />
+				</div>
+				<img class="size-15" src={icono} alt="Icono de servicio" />
+				<p class=" text-white/50 font-semibold">{title}</p>
+			</a>
+		))
+	}
+</section>

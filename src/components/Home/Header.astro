@@ -1,0 +1,45 @@
+---
+import BotonPrimary from './BotonPrimary.astro';
+const currentPath = Astro.url.pathname;
+
+const LINKS = [
+	{ name: 'Home', href: '/' },
+	{ name: 'About Us', href: '/about' },
+	{ name: 'Properties', href: '/properties' },
+	{ name: 'Services', href: '/services' },
+];
+---
+
+<div class="w-full flex items-center justify-center bg-[url('../assets/Home/Abstracto.png')] bg-primary text-white px-3 py-5 gap-2.5 relative">
+	<p>
+		✨Discover Your Dream Property with Estatein
+		<a href="/" class="underline ms-3 hover:text-white/60 transition-colors">Learn More</a>
+	</p>
+
+	<button class="bg-white/25 text-black rounded-full hover:bg-black hover:text-white hover:border transition-colors size-7 p-1 cursor-pointer absolute right-1/12">
+		<img src="/src/assets/Eliminar.png" alt="Icono para eliminar" />
+	</button>
+</div>
+
+<div class="w-full flex items-center justify-around bg-primary text-white px-3 py-5 gap-2.5 relative">
+	<div class="flex gap-3 items-center">
+		<img class="size-8" src="/src/assets/Logo.svg" alt="Logo" />
+		<h1>Estatein</h1>
+	</div>
+
+	<nav class="py-3">
+		<ul class="flex gap-3 items-center">
+			{
+				LINKS.map(({ name, href }) => (
+					<li>
+						<BotonPrimary texto={name} href={href} clase={currentPath === href ? 'active' : ''} />
+					</li>
+				))
+			}
+		</ul>
+	</nav>
+
+	<div>
+		<BotonPrimary texto="Contact Us" href="/" />
+	</div>
+</div>

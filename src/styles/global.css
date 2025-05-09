@@ -1,1 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+	--color-primary: #1a1a1a;
+	--color-secondary: #703bf7;
+	--text-xs: 12px;
+}
+
+.active {
+	@apply bg-black text-white border border-white;
+}
+
+.disable {
+	@apply opacity-40;
+}

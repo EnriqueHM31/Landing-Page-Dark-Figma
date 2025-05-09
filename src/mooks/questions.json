@@ -1,0 +1,49 @@
+{
+	"questions": [
+		{
+			"question": "How do I search for properties on Estatein?",
+			"answer": "Learn how to use our user-friendly search tools to find properties that match your criteria.",
+			"link": "/"
+		},
+		{
+			"question": "What documents do I need to sell my property through Estatein?",
+			"answer": "Find out about the necessary documentation for listing your property with us.",
+			"link": "/"
+		},
+		{
+			"question": "How can I contact an Estatein agent?",
+			"answer": "Discover the different ways you can get in touch with our experienced agents.",
+			"link": "/"
+		},
+		{
+			"question": "What is the process for selling my property through Estatein?",
+			"answer": "Learn about the steps involved in selling your property with us.",
+			"link": "/"
+		},
+		{
+			"question": "How do I find a property to sell?",
+			"answer": "Discover our extensive database of properties available for sale.",
+			"link": "/"
+		},
+		{
+			"question": "What are the fees associated with selling my property through Estatein?",
+			"answer": "Find out about the fees associated with selling your property with us.",
+			"link": "/"
+		},
+		{
+			"question": "How do I get a quote for selling my property?",
+			"answer": "Learn about our pricing options and how to get a quote for your property.",
+			"link": "/"
+		},
+		{
+			"question": "What is the process for closing a sale?",
+			"answer": "Find out about the steps involved in closing a sale with us.",
+			"link": "/"
+		},
+		{
+			"question": "How do I cancel a sale?",
+			"answer": "Learn about the process of canceling a sale with us.",
+			"link": "/"
+		}
+	]
+}
