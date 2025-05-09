@@ -3,27 +3,29 @@ import BotonPrimary from '../../components/Home/BotonPrimary.astro';
 import SliderProperties from '../../components/Home/React/SliderProperties.tsx';
 ---
 
-<section class="py-16 px-14 bg-black">
-	<header class="flex w-full gap-5">
-		<div class="flex-2 flex flex-col gap-3">
-			<h2 class="text-4xl font-semibold">
-				<img src="/src/assets/Home/IconEstrellas.png" alt="Icono de estrellas" /><br />
-				Featured Properties
-			</h2>
-			<p class="text-white/50">
-				Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available
-				through Estatein. Click "View Details" for more information.
-			</p>
-		</div>
+<section class="flex items-center justify-center bg-black">
+	<div class="w-laptop py-16">
+		<header class="flex w-full gap-5">
+			<div class="flex-2 flex flex-col gap-3">
+				<h2 class="text-4xl font-semibold">
+					<img src="/src/assets/Home/IconEstrellas.png" alt="Icono de estrellas" /><br />
+					Featured Properties
+				</h2>
+				<p class="text-white/50">
+					Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available
+					through Estatein. Click "View Details" for more information.
+				</p>
+			</div>
 
-		<div class="flex-1 flex items-end justify-end">
-			<BotonPrimary texto="View All Properties" href="/" />
-		</div>
-	</header>
+			<div class="flex-1 flex items-end justify-end">
+				<BotonPrimary texto="View All Properties" href="/" />
+			</div>
+		</header>
 
-	<div class="flex flex-col gap-4">
-		<div class="flex gap-8">
-			<SliderProperties client:load />
+		<div class="flex flex-col gap-4">
+			<div class="flex gap-8">
+				<SliderProperties client:load />
+			</div>
 		</div>
 	</div>
 </section>

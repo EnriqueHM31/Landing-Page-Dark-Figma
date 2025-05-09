@@ -21,7 +21,7 @@ export default function CardServices({ title, content, author, estrellas }: Card
 
 			<div className="flex flex-col gap-3">
 				<h2 className="text-2xl font-semibold">{title}</h2>
-				<p className="text-white/50 basis-20 ">{content}</p>
+				<p className="text-white/50 basis-24 ">{content}</p>
 
 				<div className="flex items-center gap-9 mt-3">
 					<img src={avatar} alt={`Imagen de ${name}`} className="rounded-full w-12 h-12 object-cover" />

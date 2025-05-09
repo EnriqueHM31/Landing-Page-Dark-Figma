@@ -3,7 +3,8 @@
 @theme {
 	--color-primary: #1a1a1a;
 	--color-secondary: #703bf7;
-	--text-xs: 12px;
+	--text-xs: 11px;
+	--container-laptop: 1250px;
 }
 
 .active {

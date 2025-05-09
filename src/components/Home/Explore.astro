@@ -1,0 +1,31 @@
+---
+import BotonSecondary from './BotonSecondary.astro';
+---
+
+<section class="bg-black flex justify-center items-center relative">
+	<div class="w-laptop py-16 min-h-1/2">
+		<div class="flex flex-col gap-4">
+			<div class="absolute w-full top-0 left-0 flex justify-start z-10">
+				<img src="/src/assets/Home/Abstracto3.png" alt="Icono de una figura abstracta" class="object-cover" />
+			</div>
+
+			<div class="absolute w-full top-0 right-0 flex justify-end z-10">
+				<img src="/src/assets/Home/Abstracto2.png" alt="Icono de una figura abstracta" class="object-cover" />
+			</div>
+		</div>
+
+		<div class="flex gap-6 z-20 px-5">
+			<div class="z-20 flex-4 flex flex-col gap-4">
+				<h2 class="text-4xl font-semibold">Start Your Real Estate Journey Today</h2>
+				<p class="text-white/50 text-pretty">
+					Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice,
+					Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available
+					properties or get in touch with our team for personalized assistance.
+				</p>
+			</div>
+			<div class="z-20 flex-1 flex items-center justify-center">
+				<BotonSecondary texto="Explore Properties" href="/" />
+			</div>
+		</div>
+	</div>
+</section>

@@ -3,26 +3,28 @@ import BotonPrimary from '../../components/Home/BotonPrimary.astro';
 import SliderTestimonials from '../../components/Home/React/SliderTestimonials.tsx';
 ---
 
-<section class="py-16 px-14 bg-black">
-	<header class="flex w-full gap-5">
-		<div class="flex-2 flex flex-col gap-3">
-			<h2 class="text-4xl font-semibold">
-				<img src="/src/assets/Home/IconEstrellas.png" alt="Icono de estrellas" /><br />
-				What Our Clients Say
-			</h2>
-			<p class="text-white/50">
-				Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
-			</p>
-		</div>
+<section class="bg-black flex justify-center items-center">
+	<div class="w-laptop py-16">
+		<header class="flex w-full gap-5">
+			<div class="flex-2 flex flex-col gap-3">
+				<h2 class="text-4xl font-semibold">
+					<img src="/src/assets/Home/IconEstrellas.png" alt="Icono de estrellas" /><br />
+					What Our Clients Say
+				</h2>
+				<p class="text-white/50">
+					Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
+				</p>
+			</div>
 
-		<div class="flex-1 flex items-end justify-end">
-			<BotonPrimary texto="View All Testimonials" href="/" />
-		</div>
-	</header>
+			<div class="flex-1 flex items-end justify-end">
+				<BotonPrimary texto="View All Testimonials" href="/" />
+			</div>
+		</header>
 
-	<div class="flex flex-col gap-4">
-		<div class="flex gap-8">
-			<SliderTestimonials client:load />
+		<div class="flex flex-col gap-4">
+			<div class="flex gap-8">
+				<SliderTestimonials client:load />
+			</div>
 		</div>
 	</div>
 </section>

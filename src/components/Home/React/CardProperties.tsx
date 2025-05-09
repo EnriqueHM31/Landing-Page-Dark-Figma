@@ -24,10 +24,10 @@ export default function CardServices({ img, title, subtitle, botones, precio, li
 				{botones.map(({ icono, texto }, i) => (
 					<button
 						key={i}
-						className="flex-1 flex gap-2 items-center w-full max-w-[200px] border border-white/25 hover:shadow-lg hover:shadow-secondary hover:border-secondary transition-colors px-3 py-2 rounded-xl"
+						className="flex-1 flex gap-2 items-center w-full max-w-[200px] border border-white/25 hover:shadow-lg hover:shadow-secondary hover:border-secondary transition-colors px-3 py-4 rounded-xl"
 					>
-						<div className="w-6 h-6 flex-shrink-0">
-							<img className="w-full h-full object-contain" src={icono} alt={texto} />
+						<div className="size-3.5 flex-shrink-0">
+							<img className="w-full h-full object-cover" src={icono} alt={texto} />
 						</div>
 						<p className="font-semibold text-xs">{texto}</p>
 					</button>
