@@ -14,7 +14,7 @@ interface CardPropertiesProps {
 export default function CardServices({ title, content, author, estrellas }: CardPropertiesProps) {
 	const { avatar, name, location } = author;
 	return (
-		<div className="flex-1 flex flex-col gap-4 bg-primary p-6 my-7 rounded-2xl border border-white/15 hover:border-yellow-300 hover:shadow-sm hover:shadow-amber-200 transition-colors h-full min-h-[350px] items-stretch">
+		<div className="flex-1 flex flex-col gap-4 bg-primary p-6 my-7 rounded-2xl border border-white/15 hover:border-yellow-300 hover:shadow-sm hover:shadow-amber-200 transition-colors h-full md:min-h-[350px] min-h-[390px] items-stretch">
 			<div>
 				<StartTestimonials cantidad={estrellas} />
 			</div>

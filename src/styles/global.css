@@ -10,7 +10,7 @@
 }
 
 .active {
-	@apply bg-black text-white border border-white;
+	@apply bg-secondary text-white font-bold border border-black;
 }
 
 .disable {

@@ -8,12 +8,16 @@ const LINKS = [
 	{ name: 'Properties', href: '/properties' },
 	{ name: 'Services', href: '/services' },
 ];
+
+const claseActive = (href: string) => {
+	return currentPath === href ? 'active' : '';
+};
 ---
 
 <div
-	class="w-full flex items-center xl:justify-center justify-start bg-[url('../assets/Home/Abstracto.png')] bg-primary text-white p-3 gap-2.5 relative overflow-hidden"
+	class="w-full flex items-center xl:justify-center justify-start bg-[url('../assets/Home/Abstracto.png')] bg-primary text-white p-3 gap-2.5 overflow-hidden xl:order-1 order-2 mt-16 xl:mt-0"
 >
-	<p class="xl:text-lg max-w-4/6">
+	<p class="xl:text-lg text-sm max-w-5/6">
 		✨Discover Your Dream Property with Estatein
 		<a href="/" class="underline xl:ms-3 ms-1 hover:text-white/60 transition-colors">Learn More</a>
 	</p>
@@ -25,44 +29,57 @@ const LINKS = [
 	</button>
 </div>
 
-<div class="w-full flex items-center xl:justify-around justify-between xl:px-3 px-6 bg-primary text-white py-5 gap-2.5 xl:relative overflow-hidden">
-	<div class="flex gap-3 items-center">
-		<img class="size-8" src="/src/assets/Logo.svg" alt="Logo" />
-		<h1>Estatein</h1>
+<nav class="bg-primary fixed xl:static w-full z-20 top-0 start-0">
+	<div class="w-full flex flex-wrap items-center justify-between mx-auto p-4 max-w-laptop">
+		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+			<img src="/src/assets/Logo.svg" class="h-8" alt="Estatein Logo" />
+			<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Estatein</span>
+		</a>
+		<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+			<BotonPrimary texto="Contact" href="/" />
+
+			<button
+				data-collapse-toggle="navbar-sticky"
+				type="button"
+				class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 border-white"
+				aria-controls="navbar-sticky"
+				aria-expanded="false"
+				id="menu"
+			>
+				<span class="sr-only">Open main menu</span>
+				<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
+				</svg>
+			</button>
+		</div>
+		<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+			<ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+				{
+					LINKS.map(({ name, href }, i) => (
+						<li>
+							<BotonPrimary
+								texto={name}
+								href={href}
+								clase={`${claseActive(href)} block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:text-white md:px-4 md:py-2 text-white`}
+							/>
+						</li>
+					))
+				}
+			</ul>
+		</div>
 	</div>
-
-	<nav
-		class="py-2 xl:flex hidden flex-col xl:flex-row items-center justify-center gap-6 xl:gap-3 w-full xl:w-auto fixed xl:static bg-black xl:bg-primary z-50 top-0 right-0 h-1/2 border xl:border-none border-white/50"
-		id="navegacion"
-	>
-		{LINKS.map(({ name, href }) => <BotonPrimary texto={name} href={href} clase={currentPath === href ? 'active' : ''} />)}
-	</nav>
-
-	<div
-		class="xl:flex hidden fixed xl:static z-50 xl:bg-primary bg-primary xl:p-0 p-3 items-center justify-center top-2/4 left-0 w-full xl:w-auto mt-4 xl:mt-0"
-		id="contacto"
-	>
-		<BotonPrimary texto="Contact Us" href="/" />
-	</div>
-
-	<button id="menu" class="xl:hidden flex items-center justify-center z-50 size-10">
-		<img src="/src/assets/IconMenu.png" alt="Icono para menu" />
-	</button>
-</div>
+</nav>
 
 <script>
 	document.addEventListener('DOMContentLoaded', () => {
 		const menu = document.getElementById('menu');
-		const navegacion = document.getElementById('navegacion');
-		const contacto = document.getElementById('contacto');
+		const navegacion = document.getElementById('navbar-sticky');
 
-		if (!menu || !navegacion || !contacto) return;
+		if (!menu || !navegacion) return;
 
 		menu.addEventListener('click', () => {
 			navegacion.classList.toggle('hidden');
-			navegacion.classList.toggle('flex');
-			contacto.classList.toggle('hidden');
-			contacto.classList.toggle('flex');
+			navegacion.classList.toggle('animate-fade-in-down');
 		});
 	});
 </script>

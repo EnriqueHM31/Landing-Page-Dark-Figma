@@ -18,14 +18,14 @@ export default function NavegacionSlider({ page, totalPages, prev, next, dehabil
 			<div className="flex gap-7">
 				<button
 					onClick={prev}
-					className={`border border-white/25 hover:shadow-lg  hover:border transition-colors px-3 py-2 rounded-xl ${color} ${dehabilitadoPrevious}`}
+					className={`border border-white/25 focus:shadow-lg hover:shadow-lg  focus:border transition-colors px-3 py-2 rounded-xl ${color} ${dehabilitadoPrevious}`}
 					disabled={page === 0}
 				>
 					<img src="/src/assets/Home/iconPrevious.png" alt="Icono de anterior" />
 				</button>
 				<button
 					onClick={next}
-					className={`border border-white/25 hover:shadow-lg hover:border transition-colors px-3 py-2 rounded-xl ${color} ${dehabilitadoNext}`}
+					className={`border border-white/25 focus:shadow-lg  hover:shadow-lg focus:border transition-colors px-3 py-2 rounded-xl ${color} ${dehabilitadoNext}`}
 					disabled={page === totalPages - 1}
 				>
 					<img src="/src/assets/Home/iconNext.png" alt="Icono de siguiente" />

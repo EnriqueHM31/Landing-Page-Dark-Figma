@@ -8,7 +8,7 @@ export default function SliderProperties() {
 		<Slider
 			items={testimonials}
 			CardComponent={(item) => <CardTestimonials {...item} />}
-			color="hover:shadow-yellow-300 hover:border-yellow-300"
+			color="hover:shadow-yellow-300 hover:border-yellow-300 focus:shadow-yellow-300 focus:border-yellow-300"
 			typeCard="Testimonials"
 		/>
 	);

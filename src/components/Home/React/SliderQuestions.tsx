@@ -8,7 +8,7 @@ export default function SliderProperties() {
 		<Slider
 			items={questions}
 			CardComponent={(item) => <CardQuestions {...item} />}
-			color="hover:shadow-white hover:border-white"
+			color="hover:shadow-white hover:border-white focus:shadow-white focus:border-white"
 			typeCard="Questions"
 		/>
 	);
