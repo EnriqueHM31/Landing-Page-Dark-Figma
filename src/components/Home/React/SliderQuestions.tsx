@@ -4,5 +4,12 @@ import { questions } from '../../../mooks/questions.json';
 import CardQuestions from './CardQuestions';
 
 export default function SliderProperties() {
-	return <Slider items={questions} CardComponent={(item) => <CardQuestions {...item} />} color="hover:shadow-white hover:border-white" />;
+	return (
+		<Slider
+			items={questions}
+			CardComponent={(item) => <CardQuestions {...item} />}
+			color="hover:shadow-white hover:border-white"
+			typeCard="Questions"
+		/>
+	);
 }

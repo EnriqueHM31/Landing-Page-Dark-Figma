@@ -3,10 +3,10 @@ import BotonPrimary from '../../components/Home/BotonPrimary.astro';
 import SliderTestimonials from '../../components/Home/React/SliderTestimonials.tsx';
 ---
 
-<section class="bg-black flex justify-center items-center">
-	<div class="w-laptop py-16">
-		<header class="flex w-full gap-5">
-			<div class="flex-2 flex flex-col gap-3">
+<section class="bg-black flex justify-center items-center overflow-hidden">
+	<div class="w-laptop py-16 xl:px-0 px-4">
+		<header class="flex xl:flex-row flex-col w-full gap-5">
+			<div data-aos="zoom-in-left" data-aos-delay="200" class="flex-2 flex flex-col gap-3">
 				<h2 class="text-4xl font-semibold">
 					<img src="/src/assets/Home/IconEstrellas.png" alt="Icono de estrellas" /><br />
 					What Our Clients Say
@@ -16,7 +16,7 @@ import SliderTestimonials from '../../components/Home/React/SliderTestimonials.t
 				</p>
 			</div>
 
-			<div class="flex-1 flex items-end justify-end">
+			<div data-aos="zoom-in-right" data-aos-delay="200" class="flex-1 flex items-end justify-end">
 				<BotonPrimary texto="View All Testimonials" href="/" />
 			</div>
 		</header>

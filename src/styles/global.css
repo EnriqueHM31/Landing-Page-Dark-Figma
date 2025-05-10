@@ -1,9 +1,11 @@
 @import 'tailwindcss';
+@config "../../tailwind.config.mjs";
 
 @theme {
 	--color-primary: #1a1a1a;
 	--color-secondary: #703bf7;
 	--text-xs: 11px;
+	--text-movil: 12.5px;
 	--container-laptop: 1250px;
 }
 

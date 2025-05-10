@@ -4,5 +4,12 @@ import CardProperties from './CardProperties';
 import { properties } from '../../../mooks/properties.json';
 
 export default function SliderProperties() {
-	return <Slider items={properties} CardComponent={(item) => <CardProperties {...item} />} color="hover:shadow-secondary hover:border-secondary" />;
+	return (
+		<Slider
+			items={properties}
+			CardComponent={(item) => <CardProperties {...item} />}
+			color="hover:shadow-secondary hover:border-secondary"
+			typeCard="Properties"
+		/>
+	);
 }

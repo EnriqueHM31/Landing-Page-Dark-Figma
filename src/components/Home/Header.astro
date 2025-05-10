@@ -10,10 +10,12 @@ const LINKS = [
 ];
 ---
 
-<div class="w-full flex items-center justify-center bg-[url('../assets/Home/Abstracto.png')] bg-primary text-white p-3 gap-2.5 relative">
-	<p>
+<div
+	class="w-full flex items-center xl:justify-center justify-start bg-[url('../assets/Home/Abstracto.png')] bg-primary text-white p-3 gap-2.5 relative overflow-hidden"
+>
+	<p class="xl:text-lg max-w-4/6">
 		✨Discover Your Dream Property with Estatein
-		<a href="/" class="underline ms-3 hover:text-white/60 transition-colors">Learn More</a>
+		<a href="/" class="underline xl:ms-3 ms-1 hover:text-white/60 transition-colors">Learn More</a>
 	</p>
 
 	<button
@@ -23,25 +25,44 @@ const LINKS = [
 	</button>
 </div>
 
-<div class="w-full flex items-center justify-around bg-primary text-white px-3 py-5 gap-2.5 relative">
+<div class="w-full flex items-center xl:justify-around justify-between xl:px-3 px-6 bg-primary text-white py-5 gap-2.5 xl:relative overflow-hidden">
 	<div class="flex gap-3 items-center">
 		<img class="size-8" src="/src/assets/Logo.svg" alt="Logo" />
 		<h1>Estatein</h1>
 	</div>
 
-	<nav class="py-2">
-		<ul class="flex gap-3 items-center">
-			{
-				LINKS.map(({ name, href }) => (
-					<li>
-						<BotonPrimary texto={name} href={href} clase={currentPath === href ? 'active' : ''} />
-					</li>
-				))
-			}
-		</ul>
+	<nav
+		class="py-2 xl:flex hidden flex-col xl:flex-row items-center justify-center gap-6 xl:gap-3 w-full xl:w-auto fixed xl:static bg-black xl:bg-primary z-50 top-0 right-0 h-1/2 border xl:border-none border-white/50"
+		id="navegacion"
+	>
+		{LINKS.map(({ name, href }) => <BotonPrimary texto={name} href={href} clase={currentPath === href ? 'active' : ''} />)}
 	</nav>
 
-	<div>
+	<div
+		class="xl:flex hidden fixed xl:static z-50 xl:bg-primary bg-primary xl:p-0 p-3 items-center justify-center top-2/4 left-0 w-full xl:w-auto mt-4 xl:mt-0"
+		id="contacto"
+	>
 		<BotonPrimary texto="Contact Us" href="/" />
 	</div>
+
+	<button id="menu" class="xl:hidden flex items-center justify-center z-50 size-10">
+		<img src="/src/assets/IconMenu.png" alt="Icono para menu" />
+	</button>
 </div>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const menu = document.getElementById('menu');
+		const navegacion = document.getElementById('navegacion');
+		const contacto = document.getElementById('contacto');
+
+		if (!menu || !navegacion || !contacto) return;
+
+		menu.addEventListener('click', () => {
+			navegacion.classList.toggle('hidden');
+			navegacion.classList.toggle('flex');
+			contacto.classList.toggle('hidden');
+			contacto.classList.toggle('flex');
+		});
+	});
+</script>
