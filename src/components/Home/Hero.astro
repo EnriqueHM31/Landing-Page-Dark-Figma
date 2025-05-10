@@ -1,12 +1,8 @@
 ---
-import BotonPrimary from './BotonPrimary.astro';
-import BotonSecondary from './BotonSecondary.astro';
-
-const ESTADISTICAS = [
-	{ numero: '200+', title: 'Happy Customers' },
-	{ numero: '10k+', title: 'Properties For Clients' },
-	{ numero: '16+', title: 'Years for Experience' },
-];
+import CardEstadisticas from '../Layout/CardEstadisticas.astro';
+import BotonPrimary from '../Layout/BotonPrimary.astro';
+import BotonSecondary from '../Layout/BotonSecondary.astro';
+import { ESTADISTICAS } from '../../assets/js/PageInfo.js';
 ---
 
 <section class="flex xl:flex-row flex-col w-full bg-black relative overflow-hidden">
@@ -28,16 +24,7 @@ const ESTADISTICAS = [
 		</div>
 
 		<div class="grid grid-cols-2 gap-2 xl:flex xl:flex-wrap xl:gap-3 w-full">
-			{
-				ESTADISTICAS.map(({ numero, title }, i) => (
-					<div
-						class={`flex flex-col gap-3 bg-primary px-3 py-4 xl:mt-7 rounded-2xl ${i === 2 ? 'col-span-2' : ''} xl:flex-1 items-center xl:items-start `}
-					>
-						<p class="text-3xl font-bold">{numero}</p>
-						<p class="text-sm text-white/50 text-center">{title}</p>
-					</div>
-				))
-			}
+			{ESTADISTICAS.map(({ numero, title }, i) => <CardEstadisticas numero={numero} title={title} i={i} />)}
 		</div>
 	</div>
 

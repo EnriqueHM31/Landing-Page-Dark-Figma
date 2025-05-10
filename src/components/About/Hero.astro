@@ -1,0 +1,26 @@
+---
+import CardEstadisticas from '../Layout/CardEstadisticas.astro';
+import TituloSeccion from '../Layout/TituloSeccion.astro';
+import { ESTADISTICAS } from '../../assets/js/PageInfo.js';
+---
+
+<section class="flex flex-col gap-6 w-full bg-black overflow-hidden xl:py-16 py-8">
+	<div class="p-4 flex flex-col xl:flex-row gap-5 w-full xl:w-laptop xl:m-auto m-0 xl:items-center">
+		<div class="xl:flex-1 border border-white/20 rounded-3xl order-1 xl:order-2 relative" data-aos="fade-left" data-aos-delay="300">
+			<img class="absolute w-full h-full object-cover -z-10" src="/src/assets/About/AsbtractoHero.png" alt="Imagen de portada de la seccion about" />
+			<img class="rounded-3xl w-full h-full object-cover z-20" src="/src/assets/About/Hero.png" alt="Imagen de portada de la seccion about" />
+		</div>
+
+		<div class="flex xl:flex-1 flex-col gap-3 w-full order-2 xl:order-1 xl:pe-8 pe-0">
+			<div data-aos="fade-right" data-aos-delay="400">
+				<TituloSeccion
+					title="Our Journey"
+					content="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients."
+				/>
+			</div>
+			<div class="grid grid-cols-2 gap-2 xl:flex xl:flex-wrap xl:gap-3 w-full">
+				{ESTADISTICAS.map(({ numero, title }, i) => <CardEstadisticas numero={numero} title={title} i={i} />)}
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,5 +1,5 @@
 ---
-import BotonPrimary from './BotonPrimary.astro';
+import BotonPrimary from '../Layout/BotonPrimary.astro';
 const currentPath = Astro.url.pathname;
 
 const LINKS = [
@@ -25,14 +25,14 @@ const claseActive = (href: string) => {
 	<button
 		class="bg-white/25 text-black rounded-full hover:bg-black hover:text-white hover:border transition-colors size-7 p-1 cursor-pointer absolute right-1/12"
 	>
-		<img src="/src/assets/Eliminar.png" alt="Icono para eliminar" />
+		<img src="/src/assets/General/Eliminar.png" alt="Icono para eliminar" />
 	</button>
 </div>
 
 <nav class="bg-primary fixed xl:static w-full z-20 top-0 start-0">
 	<div class="w-full flex flex-wrap items-center justify-between mx-auto p-4 max-w-laptop">
 		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-			<img src="/src/assets/Logo.svg" class="h-8" alt="Estatein Logo" />
+			<img src="/src/assets/General/Logo.svg" class="h-8" alt="Estatein Logo" />
 			<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Estatein</span>
 		</a>
 		<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

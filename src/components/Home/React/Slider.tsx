@@ -5,6 +5,7 @@ const ANIMATES = [
 	{ name: 'flip-right', componente: 'Properties' },
 	{ name: 'flip-left', componente: 'Testimonials' },
 	{ name: 'flip-up', componente: 'Questions' },
+	{ name: 'zoom-out', componente: 'Steps' },
 ];
 
 interface SliderProps<T> {
