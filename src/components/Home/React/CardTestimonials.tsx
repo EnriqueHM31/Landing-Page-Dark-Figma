@@ -1,17 +1,7 @@
 import StartTestimonials from './StartTestimonials';
+import { type CardTestimonials } from '../../../types';
 
-interface CardPropertiesProps {
-	title: string;
-	content: string;
-	author: {
-		avatar: string;
-		name: string;
-		location: string;
-	};
-	estrellas: number;
-}
-
-export default function CardServices({ title, content, author, estrellas }: CardPropertiesProps) {
+export default function CardServices({ title, content, author, estrellas }: CardTestimonials) {
 	const { avatar, name, location } = author;
 	return (
 		<div className="flex-1 flex flex-col gap-4 bg-primary p-6 my-7 rounded-2xl border border-white/15 hover:border-yellow-300 hover:shadow-sm hover:shadow-amber-200 transition-colors h-full md:min-h-[350px] min-h-[390px] items-stretch">

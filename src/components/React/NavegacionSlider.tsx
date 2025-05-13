@@ -1,12 +1,4 @@
-type NavegacionSliderProps = {
-	page: number;
-	totalPages: number;
-	prev: () => void;
-	next: () => void;
-	dehabilitadoNext: string;
-	dehabilitadoPrevious: string;
-	color: string;
-};
+import { type NavegacionSliderProps } from '../../types';
 
 export default function NavegacionSlider({ page, totalPages, prev, next, dehabilitadoNext, dehabilitadoPrevious, color }: NavegacionSliderProps) {
 	return (

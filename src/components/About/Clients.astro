@@ -1,0 +1,18 @@
+---
+import TituloSeccion from '../Layout/TituloSeccion.astro';
+import SliderClients from '../About/React/SliderClients';
+---
+
+<section class="bg-black overflow-hidden">
+	<div class="px-4 py-16 mx-auto xl:w-laptop sm:px-6 lg:px-8 flex flex-col gap-4">
+		<div data-aos="zoom-in" data-aos-delay="200">
+			<TituloSeccion
+				title="Our Valued Clients"
+				content="At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving"
+			/>
+		</div>
+		<div class="flex">
+			<SliderClients client:load />
+		</div>
+	</div>
+</section>

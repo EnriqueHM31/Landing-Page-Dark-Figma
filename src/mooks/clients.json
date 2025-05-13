@@ -1,0 +1,184 @@
+{
+	"clients": [
+		{
+			"id": 1,
+			"date": "2023",
+			"name": "Skyline Developers",
+			"domain": "Residential Real Estate",
+			"category": "Luxury Condominiums",
+			"said": "Estatein's market knowledge helped us sell our premium units faster than expected. Their network is impressive.",
+			"url": "/"
+		},
+		{
+			"id": 2,
+			"date": "2022",
+			"name": "UrbanVista Properties",
+			"domain": "Mixed-Use Developments",
+			"category": "Urban Regeneration",
+			"said": "Their innovative approach to property marketing transformed our project's visibility in competitive markets.",
+			"url": "/"
+		},
+		{
+			"id": 3,
+			"date": "2021",
+			"name": "Harbor Investments",
+			"domain": "Commercial Real Estate",
+			"category": "Office Buildings",
+			"said": "Estatein negotiated terms that exceeded our financial targets for the downtown portfolio acquisition.",
+			"url": "/"
+		},
+		{
+			"id": 4,
+			"date": "2020",
+			"name": "TerraFirma Holdings",
+			"domain": "Land Development",
+			"category": "Master-Planned Communities",
+			"said": "Their due diligence process uncovered opportunities we had overlooked, adding significant value.",
+			"url": "/"
+		},
+		{
+			"id": 5,
+			"date": "2019",
+			"name": "Summit Hospitality",
+			"domain": "Hospitality",
+			"category": "Boutique Hotels",
+			"said": "From site selection to deal closing, their team delivered exceptional results under tight deadlines.",
+			"url": "/"
+		},
+		{
+			"id": 6,
+			"date": "2018",
+			"name": "Pinnacle Asset Management",
+			"domain": "Investment Properties",
+			"category": "REIT Portfolio",
+			"said": "Their analytics-driven approach helped us optimize our real estate holdings across three states.",
+			"url": "/"
+		},
+		{
+			"id": 7,
+			"date": "2017",
+			"name": "Horizon Retail Group",
+			"domain": "Retail Real Estate",
+			"category": "Shopping Centers",
+			"said": "Estatein's tenant mix recommendations increased our property's foot traffic by 40% in the first year.",
+			"url": "/"
+		},
+		{
+			"id": 8,
+			"date": "2016",
+			"name": "Apex Industrial",
+			"domain": "Industrial Real Estate",
+			"category": "Warehouse Distribution",
+			"said": "They secured us a build-to-suit facility that perfectly matched our logistics requirements.",
+			"url": "/"
+		},
+		{
+			"id": 9,
+			"date": "2015",
+			"name": "Crestview Medical",
+			"domain": "Healthcare Real Estate",
+			"category": "Medical Offices",
+			"said": "Their understanding of healthcare zoning laws saved us months in development approvals.",
+			"url": "/"
+		},
+		{
+			"id": 10,
+			"date": "2014",
+			"name": "Stratford Education",
+			"domain": "Institutional Real Estate",
+			"category": "Private Schools",
+			"said": "Found us a campus location that met all our educational specifications and budget parameters.",
+			"url": "/"
+		},
+		{
+			"id": 11,
+			"date": "2013",
+			"name": "Marina Capital",
+			"domain": "Waterfront Properties",
+			"category": "Resort Developments",
+			"said": "Their international buyer network attracted premium offers for our coastal properties.",
+			"url": "/"
+		},
+		{
+			"id": 12,
+			"date": "2012",
+			"name": "MetroEdge Partners",
+			"domain": "Urban Redevelopment",
+			"category": "Transit-Oriented",
+			"said": "Transformed challenging urban sites into high-value mixed-use assets through creative repositioning.",
+			"url": "/"
+		},
+		{
+			"id": 13,
+			"date": "2011",
+			"name": "AgriLand Trust",
+			"domain": "Agricultural",
+			"category": "Vineyard Estates",
+			"said": "Preserved the agricultural heritage while maximizing the investment value of our Napa Valley holdings.",
+			"url": "/"
+		},
+		{
+			"id": 14,
+			"date": "2010",
+			"name": "TechSpace Innovations",
+			"domain": "Flex Space",
+			"category": "Co-Working Hubs",
+			"said": "Anticipated the flex-space trend early, helping us secure ideal locations before market saturation.",
+			"url": "/"
+		},
+		{
+			"id": 15,
+			"date": "2009",
+			"name": "Heritage Preservation",
+			"domain": "Historic Properties",
+			"category": "Landmark Buildings",
+			"said": "Balanced historic preservation requirements with modern usability in ways we hadn't imagined possible.",
+			"url": "/"
+		},
+		{
+			"id": 16,
+			"date": "2008",
+			"name": "Elevate Residential",
+			"domain": "Multi-Family",
+			"category": "Luxury Apartments",
+			"said": "Achieved 95% lease-up within 60 days of project completion through their targeted marketing campaigns.",
+			"url": "/"
+		},
+		{
+			"id": 17,
+			"date": "2007",
+			"name": "Global Trade Centers",
+			"domain": "Special Economic Zones",
+			"category": "Industrial Parks",
+			"said": "Navigated complex international regulations to establish our manufacturing hub with ideal incentives.",
+			"url": "/"
+		},
+		{
+			"id": 18,
+			"date": "2006",
+			"name": "Peak Hospitality",
+			"domain": "Resort Management",
+			"category": "Ski Resorts",
+			"said": "Their year-round activity programming recommendations increased our off-season occupancy by 65%.",
+			"url": "/"
+		},
+		{
+			"id": 19,
+			"date": "2005",
+			"name": "Solaris Sustainable",
+			"domain": "Green Buildings",
+			"category": "LEED Certified",
+			"said": "Integrated sustainability features that reduced operating costs while attracting eco-conscious tenants.",
+			"url": "/"
+		},
+		{
+			"id": 20,
+			"date": "2004",
+			"name": "Capital Heights",
+			"domain": "High-Rise",
+			"category": "Penthouse Sales",
+			"said": "Created exclusive buyer experiences that resulted in record-breaking per-square-foot prices.",
+			"url": "/"
+		}
+	]
+}

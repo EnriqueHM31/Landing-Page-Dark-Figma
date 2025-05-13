@@ -1,10 +1,7 @@
 ---
 import TituloSeccion from '../Layout/TituloSeccion.astro';
 import { VALUES } from '../../assets/js/PageInfo.js';
-
-const border = (i: number, lenght: number) => {
-	return i === lenght - 1 ? 'border-b-0' : 'border-b border-white/50';
-};
+import { borderValuesPage } from '../../assets/js/PageInfo.js';
 ---
 
 <section class="flex flex-col gap-3 w-full bg-black xl:py-16 py-0 overflow-hidden">
@@ -22,7 +19,7 @@ const border = (i: number, lenght: number) => {
 			{
 				VALUES.map(({ title, icon, texto }, i) => (
 					<article
-						class={`p-4 flex flex-col gap-4 ${border(i, VALUES.length)} xl:border-none`}
+						class={`p-4 flex flex-col gap-4 ${borderValuesPage(i, VALUES.length)} xl:border-none`}
 						data-aos="zoom-out"
 						data-aos-delay={`${i * 100 + 100}`}
 					>

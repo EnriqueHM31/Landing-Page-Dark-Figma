@@ -1,4 +1,4 @@
-import Slider from '../../Home/React/Slider';
+import Slider from '../../React/Slider';
 import CardSteps from './CardStep';
 import { steps } from '../../../mooks/steps.json';
 

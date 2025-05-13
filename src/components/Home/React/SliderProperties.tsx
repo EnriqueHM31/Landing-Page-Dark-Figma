@@ -1,5 +1,5 @@
 // src/components/Home/React/SliderPropiedades.tsx
-import Slider from './Slider';
+import Slider from '../../React/Slider';
 import CardProperties from './CardProperties';
 import { properties } from '../../../mooks/properties.json';
 

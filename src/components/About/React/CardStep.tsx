@@ -1,10 +1,6 @@
-interface CardPropertiesProps {
-	step: string;
-	title: string;
-	content: string;
-}
+import { type CardSteps } from '../../../types';
 
-export default function CardSteps({ title, content, step }: CardPropertiesProps) {
+export default function CardSteps({ title, content, step }: CardSteps) {
 	return (
 		<article className="p-2 flex-1/2 flex flex-col min-h-[370px] xl:min-h-[250px] h-full ">
 			<div className="p-3 border-s border-secondary">
