@@ -29,6 +29,7 @@ export interface CardProperties {
     botones: { icono: string; texto: string }[];
     precio: string;
     link_informacion: string;
+    eslogan: string;
 }
 
 export type CardQuestions = {
