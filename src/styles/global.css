@@ -10,9 +10,17 @@
 }
 
 .active {
-	@apply bg-secondary text-white font-bold border border-black;
+	@apply bg-secondary text-white font-bold;
 }
 
 .disable {
 	@apply opacity-40;
+}
+
+.container-select:has(.select-options:focus) {
+	@apply border-secondary;
+}
+
+.activeSelect {
+	@apply bg-secondary text-white;
 }
