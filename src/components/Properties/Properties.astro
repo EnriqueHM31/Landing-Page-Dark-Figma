@@ -1,0 +1,22 @@
+---
+import BotonPrimary from '../../components/Layout/BotonPrimary.astro';
+import SliderProperties from '../Properties/React/SliderProperties';
+import TituloSeccion from '../Layout/TituloSeccion.astro';
+---
+
+<section class="flex items-center justify-center bg-black overflow-hidden">
+	<div class="w-laptop py-16 xl:px-0 px-4">
+		<header class="flex xl:flex-row flex-col w-full gap-5">
+			<div data-aos="fade-right" data-aos-delay="100" class="flex-2 flex flex-col gap-3">
+				<TituloSeccion
+					title="Discover a World of Possibilities"
+					content="Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home"
+				/>
+			</div>
+		</header>
+
+		<div class="flex gap-2">
+			<SliderProperties client:load />
+		</div>
+	</div>
+</section>

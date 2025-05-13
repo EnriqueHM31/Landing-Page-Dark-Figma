@@ -1,0 +1,74 @@
+---
+import TituloSeccion from '../Layout/TituloSeccion.astro';
+import { property_filters } from '../../mooks/selects.json';
+---
+
+<section class="flex justify-center items-center overflow-hidden bg-gradient-to-l from-black to-transparent">
+	<div class="xl:w-laptop w-full py-16 xl:px-0 px-4 flex flex-col gap-8">
+		<div data-aos="zoom-in" data-aos-delay="200">
+			<TituloSeccion
+				title="Find Your Dream Property"
+				content="Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. With categories to suit every dreamer, your journey "
+			/>
+		</div>
+
+		<form class="w-full flex flex-col gap-8 items-center justify-center">
+			<label for="buscador" class="relative w-full xl:w-3/4" data-aos="fade-down" data-aos-delay="400">
+				<input
+					type="search"
+					name="buscador"
+					id="buscador"
+					placeholder="Search for a property"
+					class="w-full rounded-xl border border-white/25 text-white placeholder-white/50 focus:border-secondary focus:outline-none p-4"
+				/>
+				<button class="absolute top-1/2 -translate-y-1/2 right-3 bg-secondary text-white p-3 rounded-2xl">
+					<img src="/src/assets/Home/IconEnviar.png" alt="Icono para enviar" />
+				</button>
+			</label>
+
+			<div class="flex flex-col xl:flex-row gap-6 mt-6 xl:mt-2 px-2 py-4">
+				{
+					property_filters.map(({ name, options, img }, i) => (
+						<label
+							data-aos="fade-up"
+							data-aos-delay={i * 100 + 500}
+							for={name}
+							class="container-select flex xl:flex-1 gap-2 items-center border border-white/25 relative rounded-lg "
+						>
+							<div class="IconoSelect border-e border-white/25 flex items-center justify-center p-4 rounded-tl-lg rounded-bl-lg">
+								<img class=" object-contain " src={img} alt="" />
+							</div>
+							<select id={name} class="w-full px-4 py-3 select-options outline-none appearance-none">
+								{options.map(({ value, label }, i) => (
+									<option class="text-white bg-black appearance-none" value={value}>
+										{label}
+									</option>
+								))}
+							</select>
+							<label for={name} class="absolute top-1/2 -translate-y-1/2 right-3 p-3 rounded-lg">
+								<img src="/src/assets/General/IconSelect.png" alt="Icono de select" />
+							</label>
+						</label>
+					))
+				}
+			</div>
+		</form>
+	</div>
+</section>
+
+<script is:inline>
+	document.querySelectorAll('.container-select').forEach((container) => {
+		const select = container.querySelector('.select-options');
+		const icono = container.querySelector('.IconoSelect');
+
+		select?.addEventListener('change', () => {
+			if (select.value !== '') {
+				container.classList.add('activeSelect');
+				icono.classList.add('bg-black');
+			} else {
+				container.classList.remove('activeSelect');
+				icono.classList.remove('bg-black');
+			}
+		});
+	});
+</script>
