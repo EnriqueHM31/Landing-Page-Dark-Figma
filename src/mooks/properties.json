@@ -23,7 +23,8 @@
 				}
 			],
 			"precio": "$550,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "Coastal Escapes - Where Waves Beckon"
 		},
 		{
 			"img": "/src/assets/Home/Lugar2.png",
@@ -48,7 +49,8 @@
 				}
 			],
 			"precio": "$550,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "City Living Redefined – Views Above All"
 		},
 		{
 			"img": "/src/assets/Home/Lugar3.png",
@@ -73,7 +75,8 @@
 				}
 			],
 			"precio": "$550,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "Tranquil Comfort – A Rustic Luxury Escape"
 		},
 		{
 			"img": "/src/assets/Home/Lugar4.png",
@@ -98,7 +101,8 @@
 				}
 			],
 			"precio": "$310,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "Breathe Deep – Nature at Your Doorstep"
 		},
 		{
 			"img": "/src/assets/Home/Lugar5.png",
@@ -123,7 +127,8 @@
 				}
 			],
 			"precio": "$420,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "Live Elevated – Style in the City Core"
 		},
 		{
 			"img": "/src/assets/Home/Lugar6.png",
@@ -148,7 +153,8 @@
 				}
 			],
 			"precio": "$750,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "Lakeside Bliss – Family Memories Begin Here"
 		},
 		{
 			"img": "/src/assets/Home/Lugar7.png",
@@ -173,7 +179,8 @@
 				}
 			],
 			"precio": "$495,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "Peaceful Suburbia – Space to Grow and Thrive"
 		},
 		{
 			"img": "/src/assets/Home/Lugar8.png",
@@ -198,7 +205,8 @@
 				}
 			],
 			"precio": "$1,200,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "Sky-High Elegance – Ocean Views Await"
 		},
 		{
 			"img": "/src/assets/Home/Lugar9.png",
@@ -223,7 +231,8 @@
 				}
 			],
 			"precio": "$980,000",
-			"link_informacion": "/"
+			"link_informacion": "/",
+			"eslogan": "Country Freedom – Space, Nature & Luxury"
 		}
 	]
 }

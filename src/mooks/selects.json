@@ -1,0 +1,53 @@
+{
+	"property_filters": [
+		{
+			"img": "/src/assets/Properties/IconLocation.png",
+			"name": "Location",
+			"options": [
+				{ "value": "", "label": "Location" },
+				{ "value": "manhattan", "label": "Manhattan, NY" },
+				{ "value": "beverly-hills", "label": "Beverly Hills, CA" },
+				{ "value": "miami-beach", "label": "Miami Beach, FL" },
+				{ "value": "downtown-chicago", "label": "Downtown Chicago, IL" },
+				{ "value": "london-uk", "label": "London, UK" },
+				{ "value": "dubai-uae", "label": "Dubai, UAE" }
+			]
+		},
+		{
+			"img": "/src/assets/Properties/IconPropertyType.png",
+			"name": "Property Type",
+			"options": [
+				{ "value": "", "label": "Property Type" },
+				{ "value": "condo", "label": "Condominium" },
+				{ "value": "penthouse", "label": "Penthouse" },
+				{ "value": "townhouse", "label": "Townhouse" },
+				{ "value": "luxury-villa", "label": "Luxury Villa" },
+				{ "value": "office-space", "label": "Office Space" },
+				{ "value": "retail-space", "label": "Retail Space" }
+			]
+		},
+		{
+			"img": "/src/assets/Properties/IconPropertySize.png",
+			"name": "Size",
+			"options": [
+				{ "value": "", "label": "Size" },
+				{ "value": "studio", "label": "Studio (<500 sq ft)" },
+				{ "value": "1-bed", "label": "1 Bed (500-900 sq ft)" },
+				{ "value": "2-bed", "label": "2 Beds (900-1,500 sq ft)" },
+				{ "value": "3-bed", "label": "3 Beds (1,500-2,500 sq ft)" },
+				{ "value": "4-plus-bed", "label": "4+ Beds (2,500+ sq ft)" }
+			]
+		},
+		{
+			"img": "/src/assets/Properties/IconBuildYear.png",
+			"name": "Build Era",
+			"options": [
+				{ "value": "", "label": "Build Era" },
+				{ "value": "new-construction", "label": "New Construction (2020+)" },
+				{ "value": "modern", "label": "Modern (2000-2019)" },
+				{ "value": "late-20th", "label": "Late 20th Century (1970-1999)" },
+				{ "value": "mid-century", "label": "Mid-Century (1940-1969)" }
+			]
+		}
+	]
+}
